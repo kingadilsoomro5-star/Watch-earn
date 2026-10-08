@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   ArrowDownToLine,
-  ArrowLeft,
   ArrowRight,
   Bell,
   Check,
@@ -146,7 +145,7 @@ function App() {
   const [claimedPromoCodes, setClaimedPromoCodes] = useState<string[]>([]);
 
   const [referrals, setReferrals] = useState(0);
-  const [verifiedReferrals, setVerifiedReferrals] = useState(0);
+  const [verifiedReferrals] = useState(0);
 
   const [withdrawMethod, setWithdrawMethod] = useState("EasyPaisa");
   const [withdrawAmount, setWithdrawAmount] = useState("");
